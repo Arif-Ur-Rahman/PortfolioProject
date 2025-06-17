@@ -8,7 +8,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav container">
         <a href="" className="nav__logo">
-          <img src="./src/assets/atik.png" alt="logo" />
+          <img src="./src/assets/atik.png" alt="Atiks Logo" />
         </a>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
