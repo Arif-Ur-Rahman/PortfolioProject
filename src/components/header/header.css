@@ -1,11 +1,16 @@
+/* HEADER SECTION */
+
 .header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: var(--body-color);
+    background: linear-gradient(135deg, #000000, #0f52ba); /* Black to Blue Gradient */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+/* NAV CONTAINER */
 
 .nav {
     height: calc(var(--header-height) + 1.5rem);
@@ -17,9 +22,11 @@
 
 .nav__logo,
 .nav__toggle {
-    color: var(--title-color);
+    color: #ffffff;
     font-weight: var(--font-medium);
 }
+
+/* NAV LIST */
 
 .nav__list {
     display: flex;
@@ -31,82 +38,90 @@
     flex-direction: column;
     align-items: center;
     font-size: var(--small-font-size);
-    color: var(--title-color);
+    color: #ffffff;
     font-weight: var(--font-medium);
-    transition: .3s;
+    transition: 0.3s;
 }
+
+/* Icons and Toggle Base Style */
 
 .nav__icon,
-.nav__close, 
+.nav__close,
 .nav__toggle {
     display: none;
-}
-/* Active link */
-.nav__link:hover {
-    color: rgb(5, 109, 92);
+    color: #ffffff;
 }
 
-/* Break points */
+/* Hover and Active Link Styling */
 
-/* For medium Screen size */
+.nav__link:hover,
+.nav__link.active-link {
+    color: #00ffff; /* Cyan blue for hover */
+}
+
+.nav__close:hover {
+    color: #00ffff;
+}
+
+/* MEDIA QUERIES */
+
+/* Medium screens (tablets) */
 @media screen and (max-width: 768px) {
     .header {
         top: initial;
         bottom: 0;
+        background: linear-gradient(135deg, #000000, #0f52ba);
     }
+
     .nav {
         height: var(--header-height);
     }
+
     .nav__menu {
         position: fixed;
         bottom: -100%;
         left: 0;
         width: 100%;
-        background-color: var(--body-color);
+        background: linear-gradient(135deg, #000000, #0f52ba);
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: 0.4s ease-in-out;
     }
+
     .show-menu {
         bottom: 0;
     }
+
     .nav__list {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
     }
+
     .nav__icon {
         font-size: 1.2rem;
+        display: block;
     }
+
     .nav__close {
         position: absolute;
         right: 1.3rem;
         bottom: 0.5rem;
         font-size: 1.5rem;
         cursor: pointer;
-        color: var(--title-color);
+        color: #ffffff;
+        display: block;
     }
-    .nav__close:hover {
-        color: rgb(5, 109, 92);
-    }
+
     .nav__toggle {
         font-size: 1.1rem;
         cursor: pointer;
-    }
-    /*  position: absolute;
-        right: 1rem;
-        bottom: 0.5rem;
-        z-index: 101; */
-    .nav__icon,
-    .nav__close, 
-    .nav__toggle {
         display: block;
     }
 }
 
-/* For small device */
-
+/* Small devices (phones) */
 @media screen and (max-width: 350px) {
     .nav__menu {
         padding: 2rem 0.25rem 4rem;
