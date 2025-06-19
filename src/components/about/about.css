@@ -1,0 +1,141 @@
+.about__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+.about__img {
+    width: 320px;
+    height: 370px;
+    border-radius: 3rem;
+    justify-self: center;
+}
+
+.about__info {
+    grid-template-columns: repeat(3, 140px);
+    gap: 1rem;
+    margin-bottom: var(--mb-2);
+}
+
+.about__box {
+    background-color: var(--container-color);
+    border: 1px solid rgb(195, 191, 191);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 0.6rem 0.6rem;
+
+}
+.about__icon {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-0-5);
+}
+.about__title {
+    font-size: 18px;
+    font-weight: var(--font-medium);
+}
+.about__subtitle {
+    font-size: var(--tiny-font-size);
+}
+.about__description {
+    padding: 0 4rem 0 0;
+    margin-bottom: var(--mb-2-5);
+}
+.section__title {
+    font-family: "Sacramento", cursive;
+    font-size: 3.5rem;
+}
+
+/* For large devices */
+@media screen and (max-width: 992px) {
+.about__container {
+    grid-template-columns: 1fr;
+    row-gap: 2.5rem;
+}
+.about__img {
+    width: 290px;
+}
+.about__box {
+    padding: 0.75rem 0.5rem;
+}
+.about__data {
+    text-align: center;
+}
+.about__info {
+    justify-content: center;
+}
+.about__description {
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+
+  
+}
+
+@media screen and (max-width: 576px) {
+    .about__info {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about__description {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+  .about__info {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 1.5rem;
+  }
+
+  .about {
+    justify-self: center;
+    margin: 0 auto;
+  }
+
+  .about__description,
+  .about__buttons {
+    padding: 0 1rem;
+  }
+
+  .about__img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    /* .about__info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about {
+        margin: 0 auto;
+    } */
+       .about__info {
+    grid-template-columns: 1fr;
+    text-align: center;
+    row-gap: 1.5rem;
+  }
+
+  .about {
+    justify-self: center;
+    margin: 0 auto;
+  }
+
+  .about__description,
+  .about__buttons {
+    padding: 0 1rem;
+  }
+
+  .about__img {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+}
