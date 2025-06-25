@@ -3,7 +3,6 @@ import "./about.css";
 import AboutImg from "../../assets/atik_profile.jpg";
 import Resume from "../../assets/atik_resume.pdf";
 import Info from "./Info";
-import Qualification from "../qualification/Qualification";
 
 const About = () => {
   return (
@@ -17,9 +16,9 @@ const About = () => {
         <div className="about__data">
           <Info />
           <p className="about__description">
-            Frontend developer, I create web pages with UI / UX user interface,
-            I have years of experience and many clients are happy with the
-            projects carried out.
+            I am a passionate Web Developer specializing in Frontend and Backend Development. 
+            I have also interest in AI & Machine Learning. 
+            My current focus is on building responsive and scalable web applications.
           </p>
 
           <a download="" href={Resume} className="button button--flex">

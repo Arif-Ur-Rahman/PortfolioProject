@@ -6,6 +6,7 @@ import Skills from './components/skills/Skills'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import Portfolio from './components/portfolio/Portfolio'
+import EducationExperience from './components/education_experience/EducationExperience'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <main className='main'>
         <Home />
         <About />
+        <EducationExperience />
         <Skills />
         <Portfolio />
         <Contact />
