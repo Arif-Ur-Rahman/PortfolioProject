@@ -1,12 +1,12 @@
 import React from 'react'
-import { SiMysql, SiExpress, SiApollographql } from 'react-icons/si';
+import { SiMysql, SiExpress, SiApollographql,SiPostman } from 'react-icons/si';
 
 
 const Backend = () => {
 
   return (
      <div className="skills__content">
-        <h3 className="skills__title">Backend Developer</h3>
+        <h3 className="skills__title">Backend Technology</h3>
 
         <div className="skills__box">
             <div className="skills__group">
@@ -50,10 +50,10 @@ const Backend = () => {
                 </div>
 
                 <div className="skills__data">
-                    <i className="bx bxl-firebase"></i>
+                    <SiPostman size={14}/>
 
                     <div>
-                        <h3 className="skills__name">Firebase</h3>
+                        <h3 className="skills__name">Postman</h3>
                         <span className='skills__level'>Intermidiate</span>
                     </div>
                 </div>
