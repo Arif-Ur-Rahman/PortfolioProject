@@ -108,7 +108,11 @@
   }
 }
 
-
+@media screen and (max-width: 393px) {
+    .about__description {
+        text-align: justify;
+    }
+}
 /* For small devices */
 @media screen and (max-width: 350px) {
     /* .about__info {
@@ -131,6 +135,7 @@
   .about__description,
   .about__buttons {
     padding: 0 1rem;
+    text-align: justify;
   }
 
   .about__img {
