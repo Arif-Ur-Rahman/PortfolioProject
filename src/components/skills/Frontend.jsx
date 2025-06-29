@@ -3,10 +3,10 @@ import React from 'react'
 const Frontend = () => {
   return (
     <div className="skills__content" data-aos="fade-up">
-        <h3 className="skills__title">Frontend Developer </h3> 
+        <h3 className="skills__title">Frontend Technology </h3> 
 
         <div className="skills__box">
-            <div className="skills__group" data-aos="fade-right" data-aos-delay="200">
+            <div className="skills__group">
                 <div className="skills__data">
                     <i className="bx bxl-html5"></i>
 
