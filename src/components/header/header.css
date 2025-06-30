@@ -36,6 +36,19 @@
     transition: .3s;
 }
 
+.navbar a {
+  display: inline-block;
+  color: #222;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+  transform: scale(1.1);
+  color: #027272;
+}
+
+
 .nav__icon,
 .nav__close, 
 .nav__toggle {
@@ -44,6 +57,10 @@
 /* Active link */
 .nav__link:hover {
     color: rgb(5, 109, 92);
+}
+
+.scroll-header {
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Break points */
