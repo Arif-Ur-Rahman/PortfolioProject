@@ -49,23 +49,20 @@ const Portfolio = () => {
  
     <div id="portfolio">
         <div>
-        <h2 className="section__title">My<span className='ski'> P</span>ortfolio</h2>
+        <h2 className="section__title" data-aos="zoom-in">My<span className='ski'> P</span>ortfolio</h2>
         <span className="section__subtitle">Some of my works</span>
         </div>
     <section className='cardContainer'>
 
-
-
-
       {
       projects.map((project) => (
-        <div className='card' key={project.id}>
+        <div className='card' key={project.id} data-aos="zoom-in">
           <h2 className="title">{project.title}</h2>
-          <img src={project.image} alt={project.title} className='image' />
+          <img src={project.image} alt={project.title} className='image'/>
           <p className='description'>{project.description} {project.seemore}</p>
             <div className="tech-icons">
                 {project.tech.map((icon, i) => (
-                    <span key={i} className="tech-icon">
+                    <span key={i} className="tech-icon" data-aos="zoom-in-up" data-aos-delay="400">
                      {icon}
                     </span>
                 ))}
