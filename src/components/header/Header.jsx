@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav navbar container">
-        <a href="" className="nav__logo">
+        <a href="#home" className="nav__logo">
           <img src="./src/assets/atik.png" alt="logo" />
         </a>
 
