@@ -3,9 +3,9 @@ import "./footer.css"
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id='footer'>
         <div className="footer__container container">
-            <h1 className="footer__title">Atik...</h1>
+            <h1 className="footer__title" data-aos="zoom-in">Atik...</h1>
 
             <ul className="footer__list">
                 <li>
@@ -20,13 +20,13 @@ const Footer = () => {
             </ul>
             <div className="footer__social">
                 <a href="https://www.instagram.com/mazumdaratik/" className="home__social-icon" target='_blank'>
-                    <i className="uil uil-instagram footer__social-link"></i> 
+                    <i className="uil uil-instagram footer__social-link" data-aos="flip-right"></i> 
                 </a>
                 <a href="https://www.linkedin.com/in/atik-mazumdar-9aa5181bb/" className="home__social-icon" target='_blank'>
-                    <i className="uil uil-linkedin footer__social-link"></i>
+                    <i className="uil uil-linkedin footer__social-link" data-aos="zoom-in-down"></i>
                 </a>
                 <a href="https://github.com/mazumdaratik" className="home__social-icon" target='_blank'>
-                    <i className="uil uil-github-alt footer__social-link"></i>
+                    <i className="uil uil-github-alt footer__social-link " data-aos="flip-left"></i>
                 </a>
             </div>
             <span className='footer__copy'>&#169; Atik. All rights reserved.</span>
