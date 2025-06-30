@@ -5,7 +5,7 @@ import { SiMysql, SiExpress, SiApollographql,SiPostman } from 'react-icons/si';
 const Backend = () => {
 
   return (
-     <div className="skills__content">
+     <div className="skills__content" data-aos="fade-left" >
         <h3 className="skills__title">Backend Technology</h3>
 
         <div className="skills__box">
