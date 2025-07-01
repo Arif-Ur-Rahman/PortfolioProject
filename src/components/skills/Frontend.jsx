@@ -2,7 +2,7 @@ import React from 'react'
 
 const Frontend = () => {
   return (
-    <div className="skills__content" data-aos="fade-up">
+    <div className="skills__content" data-aos="fade-right" >
         <h3 className="skills__title">Frontend Technology </h3> 
 
         <div className="skills__box">
@@ -37,7 +37,7 @@ const Frontend = () => {
 
             </div>
 
-            <div className="skills__group" data-aos="fade-left" data-aos-delay="300">
+            <div className="skills__group">
                 <div className="skills__data">
                     <i className="bx bxl-react"></i>
 

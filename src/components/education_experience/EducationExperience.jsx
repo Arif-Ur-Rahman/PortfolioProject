@@ -4,11 +4,11 @@ import "./education.css"
 const Education = () => {
   return (
        <section className="ee-section">
-      <h2 className="ee-title">Education & Experience</h2>
+      <h2 className="ee-title" data-aos="zoom-in">Education & Experience</h2>
 
       <div className="ee-container">
         {/* Education Section */}
-        <div className="ee-education">
+        <div className="ee-education" data-aos="fade-right">
           <h3 className="ee-subtitle">Education</h3>
           <div className="ee-box">
             <span className='education-title'>IUBAT - International University Of Business Agriculture & Technology</span>
@@ -22,7 +22,7 @@ const Education = () => {
         </div>
 
         {/* Experience Section */}
-        <div className="ee-experience">
+        <div className="ee-experience" data-aos="fade-left">
           <h3 className="ee-subtitle">Experience</h3>
           <div className="experince_details">
              <span className='experiance-title'>Dream Diver NL</span>

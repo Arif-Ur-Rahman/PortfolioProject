@@ -25,7 +25,7 @@ const Contact = () => {
                 <h3 className="contact__title">Talk to me</h3>
 
                 <div className="contact__info">
-                    <div className="contact__card">
+                    <div className="contact__card" data-aos="flip-up">
                         <i className="bx bx-mail-send contact__card-icon"></i>
 
                         <h3 className="contact__card-title">Email</h3>
@@ -36,7 +36,7 @@ const Contact = () => {
                         </a>
                     </div>
 
-                    <div className="contact__card">
+                    <div className="contact__card" data-aos="zoom-in">
                         <i className="bx bxl-whatsapp contact__card-icon"></i>
 
                         <h3 className="contact__card-title">Whatsapp</h3>
@@ -47,7 +47,7 @@ const Contact = () => {
                         </a>
                     </div>
 
-                    <div className="contact__card">
+                    <div className="contact__card" data-aos="flip-down">
                         <i className="bx bxl-messenger contact__card-icon"></i>
 
                         <h3 className="contact__card-title">Messenger</h3>
@@ -61,7 +61,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <div className="contact__content">
+            <div className="contact__content" data-aos="flip-right">
                 <h3 className="contact__title">Write me your thoughts</h3>
 
                 <form ref={form} onSubmit={sendEmail} className="contact__form">

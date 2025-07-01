@@ -7,21 +7,23 @@ import Info from "./Info";
 const About = () => {
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">About Me</h2>
+      <h2 className="section__title" data-aos="zoom-in-up">About Me</h2>
       <span className="section__subtitle">My Introduction</span>
 
       <div className="about__container container grid">
-        <img src={AboutImg} alt="abou_profile_img" className="about__img" />
+        <img src={AboutImg} alt="abou_profile_img" className="about__img" data-aos="fade-right"
+
+     data-aos-easing="ease-in-sine" />
 
         <div className="about__data">
           <Info />
-          <p className="about__description">
+          <p className="about__description" data-aos="fade-left">
             I am a passionate Web Developer specializing in Frontend and Backend Development. 
             I have also interest in AI & Machine Learning. 
             My current focus is on building responsive and scalable web applications.
           </p>
 
-          <a download="" href={Resume} className="button button--flex">
+          <a download="" href={Resume} className="button button--flex" data-aos="fade-right">
             Download Resume
             <svg
               xmlns="http://www.w3.org/2000/svg"
