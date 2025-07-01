@@ -7,6 +7,7 @@ import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 import Portfolio from './components/portfolio/Portfolio'
 import EducationExperience from './components/education_experience/EducationExperience'
+import ScrollUp from './components/scrollUP/ScrollUp'
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <ScrollUp />
     </>
   )
 }
