@@ -16,6 +16,7 @@ const Header = () => {
       <nav className="nav navbar container">
         <a href="#home" className="nav__logo">
           <img src="./src/assets/atik.png" alt="logo" />
+
         </a>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
