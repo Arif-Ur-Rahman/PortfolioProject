@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./header.css";
+import Logo from "../../assets/atik.png" 
 
 const Header = () => {
       window.addEventListener("scroll", function () {
@@ -15,7 +16,7 @@ const Header = () => {
     <header className="header">
       <nav className="nav navbar container">
         <a href="#home" className="nav__logo">
-          <img src="./src/assets/atik.png" alt="logo" />
+          <img src={Logo} alt="logo" />
 
         </a>
 
